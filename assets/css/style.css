@@ -1,0 +1,468 @@
+/*================ IMPORTS ===============*/
+/*---------------- ICONS -----------------*/
+@import url(../icons/css/all.css);
+
+/*---------------- FONTS -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*================ RESET ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*================ BASE ================*/
+:root {
+  --header-color: #f1f1f1;
+  --border-color: #16507b;
+  --hover-color: #007bff;
+  --text-color: #444444;
+  --text-color-light: #bbbbbb;
+  --conquista-color: #f2f9ff;
+}
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--border-color);
+}
+
+/*================ MENU ================*/
+/* Mobile*/
+.menu-mobile {
+  display: none;
+}
+/* Desktop */
+header {
+  background-color: var(--header-color);
+  padding: 20px 0;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.logo {
+  color: var(--border-color);
+}
+
+.logo h2 {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.main-cta a {
+  text-decoration: none;
+  background-color: var(--hover-color);
+  color: var(--header-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  line-height: center;
+  transition: 0.5s;
+}
+
+.main-cta a:hover {
+  background-color: var(--border-color);
+}
+
+.menu {
+  width: 80%;
+  text-align: right;
+}
+
+.menu a {
+  color: var(--border-color);
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: var(--hover-color);
+}
+
+.menu .btn-menu {
+  background-color: var(--hover-color);
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 5px;
+}
+
+.menu .btn-menu:hover {
+  background-color: var(--border-color);
+  color: white;
+}
+
+/*================ MAIN ================*/
+section.main {
+  background-image: url('../img/ehero-background.jpg');
+  padding: 70px 12%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-cta {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.main-cta h2 {
+  font-size: 40px;
+}
+
+.main-cta p {
+  color: rgb(100, 100, 100);
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: var(--hover-color);
+  display: inline-block;
+  padding: 8px 30px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--border-color);
+  color: white;
+}
+
+.diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.diferencial-single {
+  background-color: var(--header-color);
+  width: 23%;
+  margin-right: 2%;
+  border-radius: 12px;
+  padding: 50px 20px;
+}
+
+.diferencial-single i {
+  color: var(--border-color);
+  font-size: 24px;
+}
+
+.diferencial-single h2 {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.diferencial-single p {
+  color: rgb(100, 100, 100);
+  font-size: 14px;
+}
+
+/*================ ABOUT ================*/
+section.sobre {
+  padding: 88px 0;
+}
+
+.chamada-sobre {
+  width: 100%;
+  text-align: center;
+}
+
+.chamada-sobre h2 {
+  text-transform: uppercase;
+}
+
+.chamada-sobre p {
+  font-size: 14px;
+  color: gray;
+  padding: 10px 0;
+}
+
+.conteudo-sobre {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteudo-sobre p {
+  width: 48%;
+  margin-right: 2%;
+  color: var(--text-color);
+}
+
+.conteudo-sobre span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.conteudo-sobre i {
+  color: var(--hover-color);
+}
+
+/*================ CONQUISTS ================*/
+section.conquista {
+  background-color: var(--conquista-color);
+  padding: 25px 0;
+}
+
+.conquista-single {
+  margin: 25px 0;
+  width: 22%;
+  margin-right: 3%;
+  text-align: center;
+}
+
+.conquista-single h2 {
+  font-size: 30px;
+}
+
+/*================ ABOUT-EMPREENDEDOR ================*/
+section.sobre-empreendedor {
+  padding: 40px 0;
+}
+
+.sobre-empreendedor-img {
+  width: 50%;
+}
+
+.sobre-empreendedor-img img {
+  max-width: 100%;
+}
+
+.sobre-empreendedor-content {
+  width: 50%;
+  padding: 0 50px;
+}
+
+.sobre-empreendedor-content h2 {
+  margin-bottom: 20px;
+}
+
+.sobre-empreendedor-content p {
+  color: var(--text-color);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/*================ CLIENTS ================*/
+section.clientes {
+  background-color: var(--conquista-color);
+  padding: 8px 0;
+}
+
+.cliente-single {
+  width: 13%;
+  margin-right: 3%;
+  text-align: center;
+}
+
+.cliente-single img {
+  width: 100%;
+  margin: 35px 0;
+  filter: grayscale(100%);
+  transform: scale(1, 1);
+
+  transition: 0.5s;
+}
+
+.cliente-single img:hover {
+  transform: scale(1.1, 1.1);
+  filter: grayscale(0%);
+}
+
+/*================ TESTEMONYALS ================*/
+section.depoimentos {
+  padding: 40px 0;
+}
+
+section.depoimentos .depoimentos-chamada {
+  text-align: center;
+}
+
+.depoimentos-chamada h2 {
+  text-transform: uppercase;
+}
+
+.carrousel {
+  display: flex;
+}
+
+.carrousel-single {
+  width: 31%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.carrousel-single-box {
+  padding: 10px;
+  background-color: #f3f9fd;
+  border-radius: 10px;
+}
+
+.carrousel-single-box i {
+  color: #c9e3f5;
+  font-size: 19px;
+  padding: 0 8px;
+}
+.carrousel-single-box p {
+  font-style: italic;
+  color: #4b4b4b;
+  font-size: 14px;
+}
+
+.carrousel-single img {
+  width: 70px;
+  height: 70px;
+  display: inline;
+  margin: 10px 0;
+  border-radius: 50%;
+}
+
+.carrousel-single span {
+  color: var(--text-color);
+}
+
+.depoimentos-chamada p {
+  color: var(--text-color-light);
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/*================ FOOTER ================*/
+footer {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  border-top: 2px solid var(--border-color);
+  padding: 5% 0;
+}
+
+.rodape-single {
+  width: 20%;
+  margin-right: 4%;
+}
+
+.rodape-single li {
+  list-style: none;
+  margin: 0;
+}
+
+.rodape-single h3 {
+  padding-bottom: 15px;
+}
+.rodape-single li i {
+  font-size: 16px;
+  color: var(--hover-color);
+  padding-right: 5px;
+}
+
+.rodape-single.social li {
+  line-height: center;
+}
+.rodape-single.social li i {
+  color: var(--header-color);
+  background-color: var(--hover-color);
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.rodape-desc {
+  width: 25%;
+  margin-right: 3%;
+}
+
+.rodape-desc p,
+.rodape-single li,
+.rodape-finaly p {
+  padding-bottom: 10px;
+}
+
+.rodape-desc span {
+  font-weight: bold;
+}
+
+.rodape-finaly {
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+.rodape-finaly a {
+  text-decoration: none;
+  color: #16507b;
+}
+/*================ RESPONSIVE ================*/
+/*----------------- 768px ------------------*/
+@media screen and (max-width: 768px) {
+  .diferencial-single {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .conteudo-sobre p {
+    width: 100%;
+    margin: 20px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .menu-mobile {
+    width: 80%;
+    text-align: right;
+    display: block;
+  }
+
+  .menu-mobile i {
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 8px;
+  }
+
+  .menu-items {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background-color: var(--header-color);
+    border-bottom: 2px solid var(--border-color);
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .menu-items.show {
+    opacity: 1;
+  }
+
+  .menu-items.hidde {
+    opacity: 0;
+  }
+
+  .menu-items a {
+    display: block;
+    text-decoration: none;
+    color: var(--border-color);
+  }
+}
